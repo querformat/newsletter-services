@@ -1,0 +1,30 @@
+{
+  "name": "querformat/newsletter-services",
+  "description": "Ermöglicht die Anmeldung über ein, über das Formulargenerator genrierte, Formular zu einem Newsletter Service via API wie zum Beispiel Clever Elements.",
+  "keywords": ["api","newsletter","cleverelements","formular","abo","subscribe","querformat"],
+  "type": "contao-module",
+  "license": "LGPL-3.0+",
+  "authors": [
+    {
+      "name": "Enrico Schiller",
+      "email": "schiller@querformat.info",
+      "homepage": "https://www.querformat.info",
+      "role": "Webdeveloper"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/querformat/contao-newsletter-services/issues",
+    "source": "https://github.com/querformat/contao-newsletter-services"
+  },
+  "require": {
+    "php": "^7.3",
+    "contao/core-bundle": "^4.4"
+  },
+  "extra": {
+    "contao": {
+      "sources": {
+        "src/newsletter-services": "system/modules/newsletter-services"
+      }
+    }
+  }
+}
