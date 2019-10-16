@@ -42,5 +42,11 @@
   },
   "extra": {
     "contao-manager-plugin": "Querformat\\NewsletterServices\\ContaoManager\\Plugin"
+  },
+  "config": {
+    "preferred-install": {
+      "querformat/*": "source",
+      "*": "dist"
+    }
   }
 }
