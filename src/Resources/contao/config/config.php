@@ -1,5 +1,8 @@
 <?php
 
+// Frontend modules
+$GLOBALS['FE_MOD']['miscellaneous']['newsletterServices'] = 'Querformat\NewsletterServices\Module\NewsletterServicesModule';
+
 /**
  * Contao Open Source CMS
  *

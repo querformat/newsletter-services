@@ -12,6 +12,6 @@ namespace Querformat\NewsletterServices;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class QuerformatNewsletterServices extends Bundle
+class NewsletterServicesBundle extends Bundle
 {
 }

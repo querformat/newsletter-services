@@ -10,7 +10,7 @@
 
 namespace Querformat\NewsletterServices\Tests;
 
-use Querformat\NewsletterServices\QuerformatNewsletterServicese;
+use Querformat\NewsletterServices\QuerformatNewsletterServiceseBundle;
 use PHPUnit\Framework\TestCase;
 
 class QuerformatNewsletterServicesTest extends TestCase
@@ -19,6 +19,6 @@ class QuerformatNewsletterServicesTest extends TestCase
     {
         $bundle = new QuerformatNewsletterServices();
 
-        $this->assertInstanceOf('Querformat\NewsletterServices\QuerformatNewsletterServices', $bundle);
+        $this->assertInstanceOf('Querformat\NewsletterServices\QuerformatNewsletterServicesBundle', $bundle);
     }
 }

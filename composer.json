@@ -32,12 +32,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Querformat\\NewsletterServices\\": "src/"
+      "Querformat\\NewsletterServices\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Querformat\\NewsletterServices\\Tests\\": "tests/"
+      "Querformat\\NewsletterServices\\Tests\\": "tests"
     }
   },
   "extra": {
