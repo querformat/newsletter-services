@@ -1,52 +1,48 @@
 {
-  "name": "querformat/newsletter-services",
-  "description": "Ermöglicht die Anmeldung über ein, über das Formulargenerator genrierte, Formular zu einem Newsletter Service via API wie zum Beispiel Clever Elements.",
-  "keywords": ["api","newsletter","cleverelements","formular","abo","subscribe","querformat"],
-  "type": "contao-bundle",
-  "license": "LGPL-3.0+",
-  "authors": [
-    {
-      "name": "Enrico Schiller",
-      "email": "schiller@querformat.info",
-      "homepage": "https://www.querformat.info",
-      "role": "Webdeveloper"
+    "name": "querformat/contao-newsletter-services-bundle",
+    "type": "contao-bundle",
+    "description": "Ermöglicht die Anmeldung über ein, über das Formulargenerator genrierte, Formular zu einem Newsletter Service via API wie zum Beispiel Clever Elements.",
+    "license": "LGPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Enrico Schiller",
+            "email": "schiller@querformat.info",
+            "homepage": "https://www.querformat.info",
+            "role": "Webdeveloper"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "contao/core-bundle": "4.4.*",
+        "symfony/framework-bundle": "^3.3",
+        "querformat/contao-newsletter-services-bundle": "dev-master"
+    },
+    "conflict": {
+        "contao/core": "*",
+        "contao/manager-plugin": "<2.0 || >=3.0"
+    },
+    "extra": {
+        "contao-manager-plugin": "Querformat\\NewsletterServicesBundle\\ContaoManager\\Plugin"
+    },
+    "autoload": {
+        "psr-4": {
+            "Querformat\\NewsletterServicesBundle\\": "src/"
+        }
+    },
+    "support": {
+        "issues": "https://github.com/querformat/contao-newsletter-services-bundle/issues",
+        "source": "https://github.com/querformat/contao-newsletter-services-bundle"
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/querformat/contao-newsletter-services-bundle.git"
+        }
+    ],
+    "config": {
+        "preferred-install": {
+            "querformat/*": "source",
+            "*": "dist"
+        }
     }
-  ],
-  "support": {
-    "issues": "https://github.com/querformat/contao-newsletter-services/issues",
-    "source": "https://github.com/querformat/contao-newsletter-services"
-  },
-  "require": {
-    "php": "^7.3",
-    "contao/core-bundle": "^4.4",
-    "symfony/framework-bundle": "^3.3"
-  },
-  "require-dev": {
-    "contao/manager-plugin": "^2.0",
-    "doctrine/doctrine-cache-bundle": "^1.3",
-    "friendsofphp/php-cs-fixer": "^2.12",
-    "php-http/guzzle6-adapter": "^1.1",
-    "php-http/message-factory": "^1.0.2",
-    "phpunit/phpunit": "^5.7.26",
-    "symfony/phpunit-bridge": "^3.2"
-  },
-  "autoload": {
-    "psr-4": {
-      "Querformat\\NewsletterServices\\": "src"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "Querformat\\NewsletterServices\\Tests\\": "tests"
-    }
-  },
-  "extra": {
-    "contao-manager-plugin": "Querformat\\NewsletterServices\\ContaoManager\\Plugin"
-  },
-  "config": {
-    "preferred-install": {
-      "querformat/*": "source",
-      "*": "dist"
-    }
-  }
 }

@@ -8,13 +8,13 @@
  * @license LGPL-3.0-or-later
  */
 
-namespace Querformat\NewsletterServices\ContaoManager;
+namespace Querformat\NewsletterServicesBundle\ContaoManager;
 
 use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
-use Querformat\NewsletterServices\QuerformatNewsletterServices;
+use Querformat\NewsletterServicesBundle\NewsletterServicesBundle;
 
 class Plugin implements BundlePluginInterface
 {
@@ -24,7 +24,7 @@ class Plugin implements BundlePluginInterface
     public function getBundles(ParserInterface $parser)
     {
         return [
-            BundleConfig::create(QuerformatNewsletterServices::class)
+            BundleConfig::create(NewsletterServicesBundle::class)
                 ->setLoadAfter([ContaoCoreBundle::class]),
         ];
     }

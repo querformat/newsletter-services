@@ -8,7 +8,7 @@
  * @license LGPL-3.0-or-later
  */
 
-namespace Querformat\NewsletterServices;
+namespace Querformat\NewsletterServicesBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
