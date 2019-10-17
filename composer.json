@@ -1,5 +1,5 @@
 {
-    "name": "querformat/contao-newsletter-services-bundle",
+    "name": "querformat/contao-newsletter-services",
     "type": "contao-module",
     "description": "Ermöglicht die Anmeldung über ein, über das Formulargenerator genrierte, Formular zu einem Newsletter Service via API wie zum Beispiel Clever Elements.",
     "license": "LGPL-3.0-or-later",
@@ -16,8 +16,8 @@
         "contao/core-bundle": "^4.4"
     },
     "support": {
-        "issues": "https://github.com/querformat/contao-newsletter-services-bundle/issues",
-        "source": "https://github.com/querformat/contao-newsletter-services-bundle"
+        "issues": "https://github.com/querformat/contao-newsletter-services/issues",
+        "source": "https://github.com/querformat/contao-newsletter-services"
     },
     "extra": {
         "contao": {
