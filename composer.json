@@ -1,6 +1,6 @@
 {
     "name": "querformat/contao-newsletter-services-bundle",
-    "type": "contao-bundle",
+    "type": "contao-module",
     "description": "Ermöglicht die Anmeldung über ein, über das Formulargenerator genrierte, Formular zu einem Newsletter Service via API wie zum Beispiel Clever Elements.",
     "license": "LGPL-3.0-or-later",
     "authors": [
@@ -13,36 +13,18 @@
     ],
     "require": {
         "php": "^7.3",
-        "contao/core-bundle": "4.4.*",
-        "symfony/framework-bundle": "^3.3",
-        "querformat/contao-newsletter-services-bundle": "dev-master"
-    },
-    "conflict": {
-        "contao/core": "*",
-        "contao/manager-plugin": "<2.0 || >=3.0"
-    },
-    "extra": {
-        "contao-manager-plugin": "Querformat\\NewsletterServicesBundle\\ContaoManager\\Plugin"
-    },
-    "autoload": {
-        "psr-4": {
-            "Querformat\\NewsletterServicesBundle\\": "src/"
-        }
+        "contao/core-bundle": "^4.4"
     },
     "support": {
         "issues": "https://github.com/querformat/contao-newsletter-services-bundle/issues",
         "source": "https://github.com/querformat/contao-newsletter-services-bundle"
     },
-    "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/querformat/contao-newsletter-services-bundle.git"
-        }
-    ],
-    "config": {
-        "preferred-install": {
-            "querformat/*": "source",
-            "*": "dist"
+    "extra": {
+        "contao": {
+            "sources": {
+                "src/newsletter-services": "system/modules/newsletter-services"
+            }
         }
     }
 }
+
